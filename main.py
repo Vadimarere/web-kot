@@ -1,4 +1,4 @@
-
+import random 
 import vk_api
 from vk_api.longpoll import VkLongPoll, VkEventType
 key = "b66ef67b37817fff3ab83645022438af6b076103830a15d97d344168840f0361dcb1a4407cad0c1aa8621"
@@ -36,7 +36,7 @@ for event in longpoll.listen():
             elif 'привет' in text: # привет > И тебе привет
                 msg_send(user_id, 'И тебе привет')
                 
-            elif 'чо' in get_msg or 'что' in get_msg:
+            elif 'шар' in get_msg or 'что' in get_msg:
                 msg_send(user_id, 'ЧТО')
                 
             else: msg_send(user_id, 'Я не есть тебя понимать')
